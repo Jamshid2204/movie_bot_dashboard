@@ -76,14 +76,14 @@ export default function App() {
   return (
     <div className="app">
       <div className="topbar">
-        <h1>🎬 Movie Bot Dashboard</h1>
+        <h1>🎬 Kino Bot Dashboard</h1>
         <button onClick={onLogout}>Logout</button>
       </div>
 
       <div className="tabs">
-        <button className={tab === 'movies' ? 'primary' : ''} onClick={() => setTab('movies')}>Movies</button>
-        <button className={tab === 'add' ? 'primary' : ''} onClick={() => setTab('add')}>Add Movie</button>
-        <button className={tab === 'stats' ? 'primary' : ''} onClick={() => setTab('stats')}>Stats</button>
+        <button className={tab === 'movies' ? 'primary' : ''} onClick={() => setTab('movies')}>Kinolar</button>
+        <button className={tab === 'add' ? 'primary' : ''} onClick={() => setTab('add')}>Kino qo'shish</button>
+        <button className={tab === 'stats' ? 'primary' : ''} onClick={() => setTab('stats')}>Statistika</button>
       </div>
 
       {tab === 'movies' && (

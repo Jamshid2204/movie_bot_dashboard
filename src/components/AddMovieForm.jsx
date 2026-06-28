@@ -81,15 +81,37 @@ export default function AddMovieForm({ onCreated }) {
         </div>
         <div className="field">
           <label>Genre</label>
-          <input value={form.genre} onChange={(e) => set('genre', e.target.value)} placeholder="Sci-Fi" />
+          <select value={form.genre} onChange={(e) => set('genre', e.target.value)}>
+            <option value="">—</option>
+            <option>Action</option>
+            <option>Adventure</option>
+            <option>Comedy</option>
+            <option>Horror</option>
+            <option>Drama</option>
+            <option>Thriller</option>
+            <option>Sci-Fi</option>
+            <option>Fantasy</option>
+            <option>Romance</option>
+            <option>Crime</option>
+          </select>
         </div>
         <div className="field">
           <label>Quality</label>
-          <input value={form.quality} onChange={(e) => set('quality', e.target.value)} placeholder="1080p" />
+          <select value={form.quality} onChange={(e) => set('quality', e.target.value)}>
+            <option value="">—</option>
+            <option>1080</option>
+            <option>720</option>
+            <option>480</option>
+          </select>
         </div>
         <div className="field">
           <label>Language</label>
-          <input value={form.language} onChange={(e) => set('language', e.target.value)} placeholder="English" />
+          <select value={form.language} onChange={(e) => set('language', e.target.value)}>
+            <option value="">—</option>
+            <option>uzb</option>
+            <option>rus</option>
+            <option>eng</option>
+          </select>
         </div>
       </div>
 
