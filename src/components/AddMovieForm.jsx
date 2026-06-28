@@ -5,8 +5,8 @@ const EMPTY = {
   title: '',
   year: '',
   genre: '',
-  quality: '',
-  language: '',
+  quality: '1080',
+  language: 'uzb',
   linkOrId: '',
   featured: false,
 };
